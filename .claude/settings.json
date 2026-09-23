@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull:*)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(date:*)",
+      "Bash(mkdir:*)",
+      "Bash(gcc:*)",
+      "Bash(g++:*)",
+      "Bash(./bin/*)",
+      "Bash(valgrind:*)",
+      "Edit(./revision_log.md)"
+    ]
+  }
+}
