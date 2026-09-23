@@ -49,6 +49,11 @@ and explain it simply on a later day.
 - C:   `gcc -std=c11 -g -Wall -Wextra -fsanitize=address,undefined <files> -o bin/<name>`
 - C++: `g++ -std=c++17 -g -Wall -Wextra -fsanitize=address,undefined <files> -o bin/<name>`
 - Create `bin/` if it does not exist. Run the binary and show me the results.
+- This setup: Claude Code runs on Windows; the toolchain lives in WSL Ubuntu.
+  Run gcc/g++/valgrind/gdb and `./bin/*` through `wsl.exe -d Ubuntu -- ...` from
+  the repo folder (it maps to `/mnt/c/Users/DELL/Desktop/Mani-Personal`). For
+  multi-line scripts, write a .sh file and run `wsl.exe -d Ubuntu -- bash <file>`;
+  don't pass `$VAR`s inline, WSL may expand them before bash sees them.
 - If sanitizers are not available on this OS (e.g. MinGW on Windows), tell me
   once and suggest WSL; meanwhile compile without `-fsanitize`.
 

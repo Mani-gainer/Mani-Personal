@@ -15,7 +15,7 @@ Problems solved: total 0 (all formats 0)
 Baseline
 
 ## Prerequisites
-- [ ] Running inside WSL/Linux — toolchain is in WSL Ubuntu (Linux 6.18.33.2-microsoft-standard-WSL2), but Claude Code runs on Windows and compiles through `wsl.exe`
+- [x] Linux toolchain reachable via WSL — Claude Code runs on Windows and compiles/runs in WSL Ubuntu (Linux 6.18.33.2-microsoft-standard-WSL2) through `wsl.exe` (accepted setup)
 - [x] gcc 15.2.0 and g++ 15.2.0 present; C11 and C++17 compile and run
 - [x] ASan+UBSan: out-of-bounds write caught (heap-buffer-overflow, exit 1); signed overflow caught by UBSan
 - [x] TSan: pthread data race detected with -fsanitize=thread -pthread (exit 66)
