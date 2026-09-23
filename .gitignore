@@ -3,3 +3,4 @@ bin/
 *.out
 *.exe
 .claude/settings.local.json
+hidden_tests/

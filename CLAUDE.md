@@ -18,8 +18,10 @@ and explain it simply on a later day.
 1. Run `git pull` to get the latest state.
 2. Run `date` to get today's date.
 3. Read `revision_log.md`.
-   - If it is empty: this is Day 1, M1 Session A. Write the plan start date
-     (today) at the top of the log.
+   - If it is empty, or Last session is none: this is Day 1, M1 Session A. If the
+     log has a Prerequisites section, re-verify any unchecked items, post pass/fail,
+     and help me fix failures before starting; remove the section when all pass.
+     If today is later than the plan start date, set the plan start date to today.
    - Otherwise: tell me "Last session: Day N, Module M, Session X (date)" and
      compute today's Day number from the plan start date.
 4. List what is due for review today (by date), then run the session.
